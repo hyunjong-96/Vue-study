@@ -6,7 +6,7 @@ Vue.use(Vuex);
 export const store = new Vuex.Store({
     state:{
         itemList:[],
-        testList:[]
+        testList:{}
     },
     getters:{
         test:function(state){

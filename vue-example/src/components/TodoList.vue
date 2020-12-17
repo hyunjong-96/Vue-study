@@ -1,6 +1,8 @@
 <template>
     <div>
-        {{test}}
+        <ul>
+            <li v-for="item in getItemList" v-bind:key="item">{{item}}</li>
+        </ul>
     </div>
 </template>
 
@@ -10,7 +12,8 @@ import {mapGetters} from 'vuex'
 export default {
     data(){
         return{
-            test:this.$store.state.testList
+            // test:this.$store.state.testList
+            test:{}
         }
     },
     computed:mapGetters({
