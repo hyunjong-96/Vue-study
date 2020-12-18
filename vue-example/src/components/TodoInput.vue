@@ -19,10 +19,10 @@ export default {
         addTodo(){
             console.log(`addTodo 함수의 newTodoItem: ${this.newTodoItem}`)
             this.$store.dispatch('addTodo',this.newTodoItem)
+            this.clearInputBox()
         },
-
-        clearInputItem(){
-            this.newTodoItem = ""
+        clearInputBox(){
+            this.newTodoItem=""
         }
     },
     computed: mapGetters({
