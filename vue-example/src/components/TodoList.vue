@@ -10,15 +10,8 @@
 import {mapGetters} from 'vuex'
 
 export default {
-    data(){
-        return{
-            // test:this.$store.state.testList
-            test:{}
-        }
-    },
     computed:mapGetters({
         getItemList:'getItemList',
-        testList:'test'
     })
 }
 </script>
