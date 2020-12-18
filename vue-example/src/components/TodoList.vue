@@ -1,8 +1,13 @@
 <template>
     <div>
-        <ul>
-            <li v-for="(item, index) in getItemList" v-bind:key="index">{{item}}
-                <button v-on:click="deleteOnlyTodo(index)">삭제</button>
+        <ul class="list">
+            <li v-for="(todo, index) in getItemList" v-bind:key="index" class="list_item">
+                <input type="checkBox" id="list_item_1"/>
+                <label for="list_item_1">
+                    <p class="list_text">{{todo}}</p>
+                </label>
+                <p class="list_date">12/18</p>
+                <button class="list_delete">삭제</button>
             </li>
         </ul>
     </div>
