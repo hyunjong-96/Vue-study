@@ -29,12 +29,12 @@ export default {
 </script>
 
 <style lang="scss">
-$color: #f0f0f0;
-.list {
-  background: $color;
+// $color: #f0f0f0;
+// .list {
+//   background: $color;
 
-  &_text {
-    font-weight: bold;
-  }
-}
+//   &_text {
+//     font-weight: bold;
+//   }
+// }
 </style>

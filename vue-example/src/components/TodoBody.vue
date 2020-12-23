@@ -19,8 +19,10 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+    $color: #a5a3a35e;
     .body{
+        background: $color;
         width:100%;
         height: 60%;
         padding: 0% 2%;
