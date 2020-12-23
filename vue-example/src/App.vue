@@ -1,35 +1,27 @@
 <template>
-  <div id="app">
-    <TodoHeader/>
-    <TodoBody/>
-  </div>
+  <v-app>
+    <v-main>
+      <TodoHeader/>
+      <TodoBody/>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import TodoHeader from "./components/TodoHeader";
-import TodoBody from "./components/TodoBody"
+
+import TodoHeader from './components/TodoHeader'
+import TodoBody from './components/TodoBody'
 
 export default {
   name: 'App',
+
   components: {
     TodoHeader,
     TodoBody
-  }
-}
-</script>
+  },
 
-<style>
-#app{
-  width: 100vw ;
-  height: 100vh;
-  font-family: sans-serif;
-}
-/* #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-} */
-</style>
+  data: () => ({
+    //
+  }),
+};
+</script>

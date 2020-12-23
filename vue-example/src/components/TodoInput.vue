@@ -1,8 +1,10 @@
 <template>
     <div class="bottom">
         <div class="input">
-        <input type="text" v-model="newTodoItem">
-        <button v-on:click="addTodo">추가</button>
+        <v-row class="mb-1">
+            <v-text-field v-model="newTodoItem" label="Todo" full-width dark filled rounded dense></v-text-field>
+            <v-btn color='primary' fab small dark v-on:click="addTodo"><v-icon>mdi-pencil</v-icon></v-btn>
+        </v-row>
         </div>
     </div>
 </template>
@@ -39,7 +41,6 @@ export default {
         width:100%;
         margin: 0% 2%;
         display:flex;
-        align-items: center;
         justify-content: center;
     }
 </style>

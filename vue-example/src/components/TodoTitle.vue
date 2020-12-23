@@ -25,11 +25,9 @@ $backgroundColor:red;
     .title{
         height:50%;
         margin: 0% 2%;
-        &_message{
-           
-        }
+        
         &_task{
-            font-size:1.5em;
+            font-size:1.2em;
             font-weight: bold;
             
         }
