@@ -1,9 +1,10 @@
 <template>
     <div class="title">
-        <p class="title_message">{{message}}</p>
+        <p class="title_message">Good evening! {{nickname}}</p>
         <p class="title_task">
-            You've got
-            <span class="title_taskTotal">{{taskTotal}}</span>
+            You've got<br>
+            <span class="title_taskTotal">{{taskTotal}}</span><br>
+            tasks today!
         </p>
     </div>
 </template>
@@ -12,13 +13,28 @@
 export default {
     data(){
         return{
-            message:"Hi! hyunjong",
+            nickname:"hyunjong",
             taskTotal:5
         }
     }
 }
 </script>
 
-<style>
-
+<style lang="scss">
+$backgroundColor:red;
+    .title{
+        height:50%;
+        margin: 0% 2%;
+        &_message{
+           
+        }
+        &_task{
+            font-size:1.5em;
+            font-weight: bold;
+            
+        }
+        &_taskTotal{
+            font-size:2em;
+        }
+    }
 </style>

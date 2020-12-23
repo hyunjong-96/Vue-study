@@ -28,6 +28,13 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+$color: #f0f0f0;
+.list {
+  background: $color;
 
+  &_text {
+    font-weight: bold;
+  }
+}
 </style>

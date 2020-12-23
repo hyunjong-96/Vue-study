@@ -1,7 +1,9 @@
 <template>
-    <div>
+    <div class="bottom">
+        <div class="input">
         <input type="text" v-model="newTodoItem">
         <button v-on:click="addTodo">추가</button>
+        </div>
     </div>
 </template>
 
@@ -31,6 +33,13 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang='scss'>
+    .bottom{
+        height:20%;
+        width:100%;
+        margin: 0% 2%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
 </style>

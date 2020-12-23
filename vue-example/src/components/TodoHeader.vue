@@ -1,28 +1,32 @@
 <template>
-    <header class="headr">
-        <h1 class="logo">My Todo List</h1>
-        <p class="date">{{thisTime}}</p>
+    <header class="header">
+        <TodoTop/>
+        <TodoTitle/>
+        <TodoInput/>
     </header>
 </template>
 
 <script>
+import TodoTop from './TodoTop';
+import TodoTitle from './TodoTitle';
+import TodoInput from './TodoInput';
 export default {
-    data(){
-        return{
-            thisTime:""
-        }
-    },
-    created(){
-        const now = new Date()
-        const month = now.getMonth()
-        const day = now.getDate()
-        const weekList = new Array("Sun","Mon","Tue","Wed","Thu","Fri","Sat")
-        const week = weekList[now.getDay()]
-        this.thisTime = `${month}/${day} ${week}`
+    components:{
+        TodoTop,
+        TodoTitle,
+        TodoInput
     }
 }
 </script>
 
-<style>
+<style lang="scss">
 
+    .header{
+        height:40%;
+        background-image: url('~@/assets/sky.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        color:white;
+    } 
+    
 </style>
