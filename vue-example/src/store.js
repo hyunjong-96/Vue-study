@@ -16,7 +16,11 @@ export const store = new Vuex.Store({
     mutations:{
         addTodo:function(state,payload){
             console.log(`mutations의 payload : ${payload}`)
-            state.itemList.push(payload)
+            const now = new Date()
+            const month = now.getMonth()+1
+            const date = now.getDate()
+            const todoInfo={'todo':payload,'date':`${month}/${date}`}
+            state.itemList.push(todoInfo)
         },
         deleteTodo:function(state){
             state.itemList=[]

@@ -3,7 +3,7 @@
         <div class="input">
         <v-row class="mb-1">
             <v-text-field v-model="newTodoItem" label="Todo" full-width dark filled rounded dense></v-text-field>
-            <v-btn color='primary' fab small dark v-on:click="addTodo"><v-icon>mdi-pencil</v-icon></v-btn>
+            <v-btn color='gray' fab small dark v-on:click="addTodo"><v-icon>mdi-pencil</v-icon></v-btn>
         </v-row>
         </div>
     </div>

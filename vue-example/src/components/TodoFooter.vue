@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <footer class="footer">Make TodoList</footer>
+    <div class="footer">
+        <p class="text">Make TodoList</p>
     </div>
 </template>
 
@@ -11,5 +11,10 @@ export default {
 </script>
 
 <style>
-
+    .text{
+            position:absolute;
+            bottom:0;
+            left:50%;
+            transform:translate(-50%,-50%);
+        }
 </style>
